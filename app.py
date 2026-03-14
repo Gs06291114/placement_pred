@@ -6,6 +6,7 @@ import random
 import re
 
 import pandas as pd
+from pandas.errors import ParserError
 import streamlit as st
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
@@ -80,6 +81,25 @@ SUMMARY_COLUMNS = [
     "certification_count",
     "backlog_count",
 ]
+
+
+
+
+def read_csv_safe(path: Path) -> pd.DataFrame:
+    encodings_to_try = ("utf-8", "utf-8-sig", "latin1", "cp1252")
+    last_error: Exception | None = None
+
+    for encoding in encodings_to_try:
+        try:
+            return pd.read_csv(path, encoding=encoding)
+        except UnicodeDecodeError as exc:
+            last_error = exc
+        except ParserError as exc:
+            last_error = exc
+
+    raise ValueError(
+        f"Could not read {path.name}. Tried encodings: {', '.join(encodings_to_try)}"
+    ) from last_error
 
 
 
@@ -185,7 +205,7 @@ def apply_custom_style() -> None:
 
 @st.cache_data
 def load_training_data() -> pd.DataFrame:
-    df = pd.read_csv(DATASET_PATH)
+    df = read_csv_safe(DATASET_PATH)
     required_cols = FEATURE_COLUMNS + [TARGET_COLUMN]
     missing = [col for col in required_cols if col not in df.columns]
     if missing:
@@ -227,7 +247,7 @@ def train_model():
 
 @st.cache_data
 def load_question_bank(round_key: str) -> list[dict]:
-    df = pd.read_csv(ROUND_FILES[round_key])
+    df = read_csv_safe(ROUND_FILES[round_key])
     required_cols = {"question", "option_1", "option_2", "option_3", "option_4", "answer"}
     if not required_cols.issubset(df.columns):
         missing = sorted(required_cols - set(df.columns))
