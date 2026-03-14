@@ -1,0 +1,151 @@
+question,option_1,option_2,option_3,option_4,answer,difficulty,type
+What is list comprehension in Python?,Loop syntax,Compact list creation,Tuple creation,Dictionary method,Compact list creation,easy,technical
+What is the output type of range() in Python?,list,tuple,range object,set,range object,easy,technical
+Which ML algorithm is used for classification?,Linear Regression,KNN,K-Means,Apriori,KNN,easy,technical
+What does normalization do in ML?,Adds noise,Scales features,Deletes data,Encodes labels,Scales features,easy,technical
+Which SQL clause groups rows?,WHERE,GROUP BY,HAVING,ORDER BY,GROUP BY,easy,technical
+What does INNER JOIN return?,All rows,Matching rows,Left table only,Right table only,Matching rows,easy,technical
+What is AI?,Human intelligence,Machine intelligence,Hardware system,Software only,Machine intelligence,easy,technical
+What is NLP used for?,Image processing,Text processing,Audio storage,Networking,Text processing,easy,technical
+You need to process a large CSV file efficiently. What is the best approach?,Load entire file at once,Use generators/chunks,Convert to JSON first,Use recursion,Use generators/chunks,moderate,technical
+A Python script is slow. What should you do first?,Rewrite in C,Profile the code,Add threads,Ignore performance,Profile the code,easy,technical
+You want reusable code across projects. What should you use?,Global variables,Functions and modules,Hardcoding,Comments only,Functions and modules,easy,technical
+Which approach improves code readability and maintenance?,Long functions,Meaningful variable names,No comments,Nested loops,Meaningful variable names,easy,technical
+Your ML model performs well on training but poorly on new data. What is the best fix?,Add more epochs,Reduce features / regularize,Remove test data,Ignore results,Reduce features / regularize,moderate,technical
+You have limited labeled data. What is a practical solution?,Discard data,Use transfer learning,Collect nothing,Stop project,Use transfer learning,hard,technical
+"Before training an ML model, what step improves results most?",Increase hardware,Clean and preprocess data,Deploy model,Tune UI,Clean and preprocess data,easy,technical
+Your dataset is imbalanced. What should you do?,Ignore imbalance,Resample or adjust weights,Delete minority class,Shuffle data only,Resample or adjust weights,moderate,technical
+A query is slow on large tables. What should you add?,More rows,Indexes,Triggers,Views only,Indexes,moderate,technical
+You need consistent data across tables. What ensures this?,Indexes,Constraints,Aliases,Sorting,Constraints,easy,technical
+You want to track historical changes in records. What is best?,Overwrite data,Audit/history table,Delete rows,Use SELECT only,Audit/history table,hard,technical
+An AI chatbot gives irrelevant answers. What should be improved first?,UI design,Training data quality,Server speed,Frontend,Training data quality,moderate,technical
+Which AI system learns from user feedback over time?,Rule-based system,Reinforcement learning system,Static program,Compiler,Reinforcement learning system,easy,technical
+What is the output of print(type(None))?,<class 'NoneType'>,<class 'null'>,<class 'void'>,<class 'None'>,<class 'NoneType'>,easy,technical
+Which data type is returned by input() in Python 3?,int,str,float,bool,str,easy,technical
+What will be the output of bool(0)?,TRUE,FALSE,None,Error,FALSE,easy,technical
+Which keyword is used to create an anonymous function?,def,func,lambda,anon,lambda,easy,technical
+What does the pass statement do?,Stops execution,Skips iteration,Does nothing,Raises error,Does nothing,easy,technical
+What is the scope of a variable declared inside a function?,Global,Local,Static,Public,Local,easy,technical
+Which method converts a string to lowercase?,lower(),down(),small(),case(),lower(),easy,technical
+What does the // operator perform?,Division,Modulo,Floor division,Exponent,Floor division,moderate,technical
+Which collection does not allow duplicate values?,List,Tuple,Set,Dictionary,Set,easy,technical
+"What is the output of len({'a':1,'b':2})?",1,2,3,Error,2,easy,technical
+Which pandas structure is two-dimensional?,Series,Array,DataFrame,Index,DataFrame,easy,technical
+Which function is used to read Excel files in pandas?,read_excel(),read_xls(),load_excel(),open_excel(),read_excel(),easy,technical
+What does df.tail() return?,First rows,Last rows,Random rows,Column names,Last rows,easy,technical
+Which method is used to rename columns?,rename(),change(),map(),replace(),rename(),moderate,technical
+What does inplace=True mean in pandas?,Returns copy,Deletes data,Modifies original,Raises error,Modifies original,moderate,technical
+Which NumPy function generates evenly spaced values?,arange(),linspace(),range(),space(),linspace(),moderate,technical
+What is the default data type of NumPy array elements?,int32,int64,float64,object,float64,moderate,technical
+Which function changes array shape without copying data?,reshape(),resize(),flatten(),copy(),reshape(),moderate,technical
+What does np.mean() compute?,Median,Mode,Average,Sum,Average,easy,technical
+Which NumPy function stacks arrays vertically?,hstack(),vstack(),stack(),join(),vstack(),moderate,technical
+Which SQL command is used to remove duplicate rows?,REMOVE,DISTINCT,UNIQUE,FILTER,DISTINCT,easy,technical
+Which JOIN returns only matching rows?,LEFT JOIN,RIGHT JOIN,FULL JOIN,INNER JOIN,INNER JOIN,easy,technical
+Which SQL function returns number of rows?,SUM(),COUNT(),TOTAL(),ROWS(),COUNT(),easy,technical
+Which clause filters grouped data?,WHERE,GROUP BY,HAVING,ORDER BY,HAVING,moderate,technical
+Which window function gives row numbers?,RANK(),DENSE_RANK(),ROW_NUMBER(),COUNT(),ROW_NUMBER(),moderate,technical
+What does PARTITION BY do in window functions?,Filters rows,Groups rows logically,Sorts rows,Limits rows,Groups rows logically,hard,technical
+Which SQL statement deletes table structure?,DELETE,TRUNCATE,DROP,REMOVE,DROP,easy,technical
+Which keyword sorts result set?,SORT BY,ORDER BY,GROUP BY,ALIGN,ORDER BY,easy,technical
+Which index type improves search speed?,Primary,Clustered,Non-clustered,Foreign,Clustered,hard,technical
+Which SQL constraint ensures unique values?,PRIMARY KEY,FOREIGN KEY,UNIQUE,CHECK,UNIQUE,easy,technical
+What is the output of print(type([])) in Python?,<class 'list'>,<class 'tuple'>,<class 'dict'>,<class 'set'>,<class 'list'>,easy,technical
+Which keyword is used to handle exceptions in Python?,catch,handle,except,error,except,moderate,technical
+Which pandas function is used to read a CSV file?,read_csv(),load_csv(),open_csv(),import_csv(),read_csv(),easy,technical
+What does df.head() return?,Last 5 rows,First 5 rows,Random rows,Column names,First 5 rows,easy,technical
+Which function is used to create an array in NumPy?,np.create(),np.array(),np.make(),np.list(),np.array(),moderate,technical
+What does NumPy mainly improve in Python?,UI design,Database access,Numerical computation performance,File handling,Numerical computation performance,moderate,technical
+Which SQL clause is used with window functions?,GROUP BY,OVER,WHERE,HAVING,OVER,easy,technical
+Which window function assigns a unique rank without gaps?,RANK(),ROW_NUMBER(),DENSE_RANK(),COUNT(),ROW_NUMBER(),hard,technical
+What is the output of: print(type({})) ?,<class 'list'>,<class 'tuple'>,<class 'dict'>,<class 'set'>,<class 'dict'>,easy,technical
+Which keyword is used to create a generator in Python?,yield,return,gen,produce,yield,easy,technical
+What does __init__() represent in a Python class?,Destructor,Constructor,Static method,Abstract method,Constructor,easy,technical
+Which of the following is mutable in Python?,tuple,string,list,int,list,easy,technical
+What is the output of bool([])?,TRUE,FALSE,None,Error,FALSE,moderate,technical
+Which pandas method is used to remove duplicate rows?,drop(),drop_duplicates(),remove(),unique(),drop_duplicates(),easy,technical
+What does df.shape return?,Number of columns,Number of rows,Rows and columns,Index range,Rows and columns,easy,technical
+Which pandas function is used to apply a function row-wise?,map(),apply(),transform(),filter(),apply(),moderate,technical
+What does df.isnull().sum() return?,Null count per column,Total null values,Boolean mask,Error,Null count per column,moderate,technical
+Which NumPy function creates an array of zeros?,np.zero(),np.zeros(),np.empty(),np.null(),np.zeros(),easy,technical
+What does numpy broadcasting allow?,Loop elimination,Shape mismatch operations,Parallel execution,Sorting,Shape mismatch operations,hard,technical
+Which function is used to compute dot product in NumPy?,np.multiply(),np.dot(),np.sum(),np.cross(),np.dot(),moderate,technical
+Which SQL window function assigns rank without gaps?,RANK(),ROW_NUMBER(),DENSE_RANK(),COUNT(),DENSE_RANK(),moderate,technical
+Which clause is mandatory for window functions?,GROUP BY,OVER,WHERE,HAVING,OVER,easy,technical
+What does PARTITION BY do in window functions?,Sorts data,Groups rows logically,Filters rows,Limits rows,Groups rows logically,hard,technical
+Which SQL command removes all rows but keeps table structure?,DELETE,DROP,TRUNCATE,REMOVE,TRUNCATE,easy,technical
+What is the output of print(type(())) in Python?,<class 'list'>,<class 'tuple'>,<class 'dict'>,<class 'set'>,<class 'tuple'>,easy,technical
+Which keyword is used to define a function in Python?,function,define,def,fun,def,moderate,technical
+What does len() return?,Memory size,Length of object,Data type,Index,Length of object,easy,technical
+Which data type is immutable?,List,Set,Dictionary,Tuple,Tuple,easy,technical
+Which function is used to display first 5 rows?,top(),first(),head(),sample(),head(),moderate,technical
+Which pandas object is 1-dimensional?,DataFrame,Series,Panel,Array,Series,moderate,technical
+What does dropna() do?,Fills missing values,Deletes columns,Removes missing values,Renames columns,Removes missing values,easy,technical
+Which library is required for pandas?,Matplotlib,NumPy,SciPy,TensorFlow,NumPy,hard,technical
+Which function creates an array?,np.create(),np.make(),np.array(),np.list(),np.array(),easy,technical
+What does reshape() do?,Sorts array,Changes array shape,Deletes values,Copies array,Changes array shape,moderate,technical
+NumPy is mainly used for?,Web apps,Numerical computation,File handling,Networking,Numerical computation,easy,technical
+What is axis=0?,Row-wise operation,Column-wise operation,Diagonal,Random,Column-wise operation,easy,technical
+Which clause is mandatory for window functions?,GROUP BY,WHERE,OVER,HAVING,OVER,moderate,technical
+Which function gives rank without gaps?,RANK(),ROW_NUMBER(),DENSE_RANK(),COUNT(),DENSE_RANK(),moderate,technical
+Which SQL keyword removes duplicate rows?,UNIQUE,DISTINCT,REMOVE,FILTER,DISTINCT,easy,technical
+Which join returns all matching and non-matching rows?,INNER JOIN,LEFT JOIN,RIGHT JOIN,FULL JOIN,FULL JOIN,hard,technical
+What keyword is used to create a class in Python?,def,class,struct,object,class,easy,technical
+What is the result of 3 ** 2 in Python?,6,9,5,Error,9,easy,technical
+Which data structure follows LIFO principle?,Queue,Stack,Tree,Graph,Stack,easy,technical
+What does the 'break' statement do?,Skips current iteration,Exits the loop,Restarts the loop,Does nothing,Exits the loop,easy,technical
+What is a lambda function?,A named function,A loop,An anonymous function,A module,An anonymous function,moderate,technical
+Which method adds an element to the end of a list?,insert(),add(),append(),extend(),append(),easy,technical
+Which metric is used for regression problems?,Accuracy,F1-Score,Mean Squared Error,Confusion Matrix,Mean Squared Error,moderate,technical
+What is the purpose of a validation set?,To train the model,To tune hyperparameters,To test final performance,To clean data,To tune hyperparameters,moderate,technical
+Which of these is an unsupervised learning algorithm?,Decision Tree,Linear Regression,K-Means Clustering,Logistic Regression,K-Means Clustering,moderate,technical
+What does 'precision' measure?,Total correct predictions,True Positives / Predicted Positives,True Positives / Actual Positives,True Negatives / Total,True Positives / Predicted Positives,hard,technical
+Which operator checks for null values?,#NAME?,IS NULL,== NULL,NULL CHECK,IS NULL,easy,technical
+What does the COUNT(*) function do?,Counts unique values,Counts non-null values,Counts all rows,Sums values,Counts all rows,easy,technical
+Which command saves changes in a transaction?,SAVE,COMMIT,ROLLBACK,UPDATE,COMMIT,moderate,technical
+How do you select the first 3 rows of a DataFrame?,df.head(3),df.top(3),df.rows(3),df.limit(3),df.head(3),easy,technical
+Which function calculates the mean of an array?,np.average(),np.median(),np.mean(),np.mode(),np.mean(),easy,technical
+What is the shape of a 3x3 matrix?,"(3,)","(9,)","(3, 3)",3,"(3, 3)",easy,technical
+What is a python decorator?,A variable,A function that modifies another function,A class attribute,A loop type,A function that modifies another function,moderate,technical
+What is the difference between list and tuple?,List is immutable,Tuple is mutable,"List is mutable, Tuple is immutable",No difference,"List is mutable, Tuple is immutable",easy,technical
+What does the 'yield' keyword do?,Stops the function,Returns a generator,Deletes a variable,Imports a module,Returns a generator,moderate,technical
+What is the Global Interpreter Lock (GIL)?,A lock on the database,A mutex that allows only one thread to execute,A file permission,A network protocol,A mutex that allows only one thread to execute,hard,technical
+Which method converts a string to a list?,str(),split(),join(),strip(),split(),easy,technical
+What is the 'vanishing gradient' problem?,Gradients become too large,Gradients become too small,Loss increases,Model overfits,Gradients become too small,hard,technical
+Which regularization technique zeroes out coefficients?,L1 (Lasso),L2 (Ridge),Dropout,Batch Normalization,L1 (Lasso),moderate,technical
+What is the purpose of an activation function?,To initialize weights,To introduce non-linearity,To calculate error,To normalize data,To introduce non-linearity,moderate,technical
+Which algorithm is best for text classification?,K-Means,Naive Bayes,Linear Regression,PCA,Naive Bayes,moderate,technical
+What does a confusion matrix show?,Model accuracy only,True/False Positives/Negatives,Training time,Feature importance,True/False Positives/Negatives,easy,technical
+Difference between UNION and UNION ALL?,UNION removes duplicates,UNION ALL removes duplicates,They are identical,UNION is faster,UNION removes duplicates,moderate,technical
+What is a Self Join?,Joining a table with another table,Joining a table with itself,Joining two databases,Deleting a table,Joining a table with itself,moderate,technical
+Which key uniquely identifies a record?,Foreign Key,Primary Key,Super Key,Candidate Key,Primary Key,easy,technical
+What is the order of execution in SQL?,SELECT -> FROM -> WHERE,FROM -> WHERE -> SELECT,WHERE -> FROM -> SELECT,SELECT -> WHERE -> FROM,FROM -> WHERE -> SELECT,moderate,technical
+Which function removes leading/trailing spaces?,TRIM(),CUT(),STRIP(),CLEAN(),TRIM(),easy,technical
+Difference between loc and iloc?,"loc is label-based, iloc is integer-based","loc is integer-based, iloc is label-based",Both are label-based,Both are integer-based,"loc is label-based, iloc is integer-based",moderate,technical
+How to handle missing data in Pandas?,df.ignore(),df.fillna(),df.empty(),df.miss(),df.fillna(),easy,technical
+What is One-Hot Encoding?,Converting text to upper case,Converting categorical data to binary vectors,Compressing data,Sorting data,Converting categorical data to binary vectors,moderate,technical
+What is a p-value?,Probability of null hypothesis being true,Probability of alternative hypothesis,The error rate,The accuracy score,Probability of null hypothesis being true,hard,technical
+Which plot is best for distribution of a single variable?,Scatter Plot,Histogram,Heatmap,Line Chart,Histogram,easy,technical
+What is the time complexity of binary search?,O(n),O(log n),O(n^2),O(1),O(log n),moderate,technical
+Which data structure uses FIFO?,Stack,Queue,Tree,Graph,Queue,easy,technical
+What is a hash map used for?,Sorting data,Key-value storage,Sequential access,Tree traversal,Key-value storage,easy,technical
+What is recursion?,A loop,A function calling itself,A database query,An error,A function calling itself,moderate,technical
+Which sorting algorithm is generally fastest?,Bubble Sort,Quick Sort,Selection Sort,Insertion Sort,Quick Sort,moderate,technical
+What is a generator in Python?,A list,A function that returns an iterator,A class,A module,A function that returns an iterator,moderate,technical
+What does __init__ do?,Initializes a class,Deletes a class,Imports a library,Starts a loop,Initializes a class,easy,technical
+What is the difference between shallow and deep copy?,"Shallow copies references, deep copies objects","Deep copies references, shallow copies objects",No difference,Shallow is faster,"Shallow copies references, deep copies objects",hard,technical
+What is a context manager?,Manages memory,Manages resources like files,Manages threads,Manages network,Manages resources like files,moderate,technical
+What is the purpose of the 'with' statement?,Exception handling,Resource management,Looping,Condition checking,Resource management,easy,technical
+What is a CNN used for?,Text processing,Image processing,Audio processing,Tabular data,Image processing,moderate,technical
+What is an RNN used for?,Image classification,Sequential data,Clustering,Regression,Sequential data,moderate,technical
+What is Transfer Learning?,Training from scratch,Using a pre-trained model,Transferring data,Sharing code,Using a pre-trained model,moderate,technical
+What is Word2Vec?,A clustering algorithm,A word embedding technique,A classification model,A regression model,A word embedding technique,hard,technical
+What is BERT?,A person,A language model,A database,A framework,A language model,moderate,technical
+What is a foreign key?,A key in another table,A primary key in another table,A unique key,A null key,A primary key in another table,easy,technical
+What is normalization?,Adding redundancy,Reducing redundancy,Deleting data,Sorting data,Reducing redundancy,moderate,technical
+What is an index in a database?,A list of tables,A data structure to speed up retrieval,A backup,A user permission,A data structure to speed up retrieval,moderate,technical
+What is ACID properties?,"Atomicity, Consistency, Isolation, Durability","Accuracy, Consistency, Integrity, Data","Access, Control, Information, Data","Analysis, Design, Implementation, Code","Atomicity, Consistency, Isolation, Durability",hard,technical
+What is a view?,A virtual table,A physical table,A backup,A log,A virtual table,easy,technical
+What is polymorphism?,Multiple forms,Single form,Data hiding,Inheritance,Multiple forms,moderate,technical
+What is encapsulation?,Bundling data and methods,Separating data and methods,Deleting data,Sharing data,Bundling data and methods,moderate,technical
+What is inheritance?,Creating new class from existing,Deleting a class,Copying a class,Hiding a class,Creating new class from existing,easy,technical
