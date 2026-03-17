@@ -102,6 +102,47 @@ def read_csv_safe(path: Path) -> pd.DataFrame:
     ) from last_error
 
 
+def sanitize_text_cell(value) -> str | None:
+    if pd.isna(value):
+        return None
+    text = str(value).strip()
+    if not text or text.lower() in {"nan", "none", "null"}:
+        return None
+    return text
+
+
+def clean_question_dataframe(df: pd.DataFrame, file_name: str) -> pd.DataFrame:
+    required_cols = ["question", "option_1", "option_2", "option_3", "option_4", "answer"]
+
+    cleaned = df.copy()
+    for col in required_cols:
+        cleaned[col] = cleaned[col].apply(sanitize_text_cell)
+
+    cleaned = cleaned.dropna(subset=required_cols).copy()
+
+    for col in required_cols:
+        cleaned[col] = cleaned[col].astype(str).str.strip()
+
+    cleaned = cleaned[cleaned["question"] != ""].copy()
+    cleaned = cleaned.drop_duplicates(subset=["question"], keep="first").reset_index(drop=True)
+
+    valid_answer_mask = cleaned.apply(
+        lambda row: row["answer"] in {
+            row["option_1"],
+            row["option_2"],
+            row["option_3"],
+            row["option_4"],
+        },
+        axis=1,
+    )
+    cleaned = cleaned[valid_answer_mask].reset_index(drop=True)
+
+    if cleaned.empty:
+        raise ValueError(f"{file_name} has no valid questions after removing blanks and duplicates.")
+
+    return cleaned
+
+
 
 def apply_custom_style() -> None:
     st.markdown(
@@ -253,18 +294,20 @@ def load_question_bank(round_key: str) -> list[dict]:
         missing = sorted(required_cols - set(df.columns))
         raise ValueError(f"{ROUND_FILES[round_key].name} is missing columns: {missing}")
 
+    cleaned_df = clean_question_dataframe(df, ROUND_FILES[round_key].name)
+
     records: list[dict] = []
-    for _, row in df.iterrows():
+    for _, row in cleaned_df.iterrows():
         records.append(
             {
-                "question": str(row["question"]),
+                "question": row["question"],
                 "options": [
-                    str(row["option_1"]),
-                    str(row["option_2"]),
-                    str(row["option_3"]),
-                    str(row["option_4"]),
+                    row["option_1"],
+                    row["option_2"],
+                    row["option_3"],
+                    row["option_4"],
                 ],
-                "answer": str(row["answer"]),
+                "answer": row["answer"],
             }
         )
     return records
@@ -368,7 +411,13 @@ def next_question() -> None:
 def start_round(round_key: str) -> None:
     bank = load_question_bank(round_key)
     total_available = len(bank)
-    question_count = random.randint(min(5, total_available), min(15, total_available))
+
+    if total_available == 0:
+        raise ValueError(f"No valid questions available in {ROUND_FILES[round_key].name}.")
+
+    min_questions = min(5, total_available)
+    max_questions = min(15, total_available)
+    question_count = max_questions if min_questions == max_questions else random.randint(min_questions, max_questions)
 
     st.session_state.round_key = round_key
     st.session_state.questions = random.sample(bank, question_count)

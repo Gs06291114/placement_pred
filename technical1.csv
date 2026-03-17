@@ -22,7 +22,6 @@ An AI chatbot gives irrelevant answers. What should be improved first?,UI design
 Which AI system learns from user feedback over time?,Rule-based system,Reinforcement learning system,Static program,Compiler,Reinforcement learning system,easy,technical
 What is the output of print(type(None))?,<class 'NoneType'>,<class 'null'>,<class 'void'>,<class 'None'>,<class 'NoneType'>,easy,technical
 Which data type is returned by input() in Python 3?,int,str,float,bool,str,easy,technical
-What will be the output of bool(0)?,TRUE,FALSE,None,Error,FALSE,easy,technical
 Which keyword is used to create an anonymous function?,def,func,lambda,anon,lambda,easy,technical
 What does the pass statement do?,Stops execution,Skips iteration,Does nothing,Raises error,Does nothing,easy,technical
 What is the scope of a variable declared inside a function?,Global,Local,Static,Public,Local,easy,technical
@@ -62,7 +61,6 @@ What is the output of: print(type({})) ?,<class 'list'>,<class 'tuple'>,<class '
 Which keyword is used to create a generator in Python?,yield,return,gen,produce,yield,easy,technical
 What does __init__() represent in a Python class?,Destructor,Constructor,Static method,Abstract method,Constructor,easy,technical
 Which of the following is mutable in Python?,tuple,string,list,int,list,easy,technical
-What is the output of bool([])?,TRUE,FALSE,None,Error,FALSE,moderate,technical
 Which pandas method is used to remove duplicate rows?,drop(),drop_duplicates(),remove(),unique(),drop_duplicates(),easy,technical
 What does df.shape return?,Number of columns,Number of rows,Rows and columns,Index range,Rows and columns,easy,technical
 Which pandas function is used to apply a function row-wise?,map(),apply(),transform(),filter(),apply(),moderate,technical
@@ -72,7 +70,6 @@ What does numpy broadcasting allow?,Loop elimination,Shape mismatch operations,P
 Which function is used to compute dot product in NumPy?,np.multiply(),np.dot(),np.sum(),np.cross(),np.dot(),moderate,technical
 Which SQL window function assigns rank without gaps?,RANK(),ROW_NUMBER(),DENSE_RANK(),COUNT(),DENSE_RANK(),moderate,technical
 Which clause is mandatory for window functions?,GROUP BY,OVER,WHERE,HAVING,OVER,easy,technical
-What does PARTITION BY do in window functions?,Sorts data,Groups rows logically,Filters rows,Limits rows,Groups rows logically,hard,technical
 Which SQL command removes all rows but keeps table structure?,DELETE,DROP,TRUNCATE,REMOVE,TRUNCATE,easy,technical
 What is the output of print(type(())) in Python?,<class 'list'>,<class 'tuple'>,<class 'dict'>,<class 'set'>,<class 'tuple'>,easy,technical
 Which keyword is used to define a function in Python?,function,define,def,fun,def,moderate,technical
@@ -86,7 +83,6 @@ Which function creates an array?,np.create(),np.make(),np.array(),np.list(),np.a
 What does reshape() do?,Sorts array,Changes array shape,Deletes values,Copies array,Changes array shape,moderate,technical
 NumPy is mainly used for?,Web apps,Numerical computation,File handling,Networking,Numerical computation,easy,technical
 What is axis=0?,Row-wise operation,Column-wise operation,Diagonal,Random,Column-wise operation,easy,technical
-Which clause is mandatory for window functions?,GROUP BY,WHERE,OVER,HAVING,OVER,moderate,technical
 Which function gives rank without gaps?,RANK(),ROW_NUMBER(),DENSE_RANK(),COUNT(),DENSE_RANK(),moderate,technical
 Which SQL keyword removes duplicate rows?,UNIQUE,DISTINCT,REMOVE,FILTER,DISTINCT,easy,technical
 Which join returns all matching and non-matching rows?,INNER JOIN,LEFT JOIN,RIGHT JOIN,FULL JOIN,FULL JOIN,hard,technical
@@ -149,3 +145,100 @@ What is a view?,A virtual table,A physical table,A backup,A log,A virtual table,
 What is polymorphism?,Multiple forms,Single form,Data hiding,Inheritance,Multiple forms,moderate,technical
 What is encapsulation?,Bundling data and methods,Separating data and methods,Deleting data,Sharing data,Bundling data and methods,moderate,technical
 What is inheritance?,Creating new class from existing,Deleting a class,Copying a class,Hiding a class,Creating new class from existing,easy,technical
+Which Python keyword is used to create an anonymous function?,lambda,yield,def,func,lambda,easy,technical
+What is the output type of {'a': 1}.keys() in Python 3?,list,tuple,dict_keys,set,dict_keys,medium,technical
+Which data type is immutable in Python?,list,set,dictionary,tuple,tuple,easy,technical
+What does the len() function return?,Data type of object,Memory address,Number of items in an object,Maximum value in object,Number of items in an object,easy,technical
+Which statement is used to handle exceptions in Python?,if-else,switch,try-except,for-while,try-except,easy,technical
+What does the pass statement do in Python?,Stops the loop,Skips current iteration,Does nothing,Raises an error,Does nothing,easy,technical
+Which function is used to get the type of a variable in Python?,kind(),class(),typeof(),type(),type(),easy,technical
+"What will list(range(2, 8, 2)) return?","[2, 4, 6]","[2, 4, 6, 8]","[2, 3, 4, 5, 6, 7]","[1, 3, 5, 7]","[2, 4, 6]",easy,technical
+Which method adds a single element at the end of a list?,append(),extend(),insertall(),push(),append(),easy,technical
+Which method is used to remove and return the last list item by default?,delete(),remove(),pop(),discard(),pop(),easy,technical
+What is returned by the expression 10 // 3 in Python?,3.33,3,4,1,3,easy,technical
+Which operator is used for exponentiation in Python?,^,**,//,%%,**,easy,technical
+What is the correct file mode to append data to a text file?,r,w,a,x,a,easy,technical
+Which keyword allows a function to return values one at a time?,yield,return,pass,break,yield,medium,technical
+A function that contains yield is called what?,decorator,generator,iterator class,lambda,generator,medium,technical
+Which built-in function applies another function to every item of an iterable?,filter(),map(),reduce(),zip(),map(),medium,technical
+Which built-in function keeps only items that satisfy a condition?,map(),sorted(),filter(),enumerate(),filter(),medium,technical
+"What does zip([1,2], ['a','b']) produce?","[(1, 'a'), (2, 'b')]","[1, 2, 'a', 'b']","{'1':'a','2':'b'}","[(1,2), ('a','b')]","[(1, 'a'), (2, 'b')]",medium,technical
+Which function returns both index and value while looping?,zip(),range(),enumerate(),index(),enumerate(),easy,technical
+What is the main purpose of a Python decorator?,Store data in files,Modify or extend function behavior,Create classes only,Convert list to tuple,Modify or extend function behavior,medium,technical
+Which statement about Python lists and tuples is correct?,"Lists are immutable, tuples are mutable",Both are immutable,"Lists are mutable, tuples are immutable",Both are sets,"Lists are mutable, tuples are immutable",easy,technical
+Which keyword is used inside a class constructor in Python?,this,self,super,cls,self,easy,technical
+What is the constructor method name in Python classes?,__start__,__create__,__init__,__newclass__,__init__,easy,technical
+Which concept lets one class acquire properties and methods of another class?,Encapsulation,Inheritance,Abstraction,Compilation,Inheritance,easy,technical
+What does super() help you access in Python?,Previous loop value,Parent class methods,Global variables only,Private package files,Parent class methods,medium,technical
+Which dunder method is used to give a readable string representation of an object?,__len__,__repr__,__str__,__call__,__str__,medium,technical
+Which collection automatically stores unique values only?,list,tuple,set,string,set,easy,technical
+Which dictionary method safely returns a value without throwing KeyError when the key is absent?,fetch(),get(),read(),find(),get(),easy,technical
+What is the main use of *args in a Python function?,Accept variable positional arguments,Accept only keyword arguments,Import all modules,Create pointers,Accept variable positional arguments,medium,technical
+What is the main use of **kwargs in a Python function?,Accept variable keyword arguments,Create dictionaries automatically,Repeat loop twice,Define private variables,Accept variable keyword arguments,medium,technical
+Which module is commonly used to work with regular expressions in Python?,regexx,re,pattern,matchlib,re,easy,technical
+What is the result of bool('') in Python?,TRUE,FALSE,Zero,Error,FALSE,easy,technical
+Which statement correctly compares two values for equality in Python?,x = y,x === y,x == y,"equal(x,y)",x == y,easy,technical
+Which clause is used to sort query results in SQL?,GROUP BY,ORDER BY,SORT BY,RANK BY,ORDER BY,easy,technical
+Which SQL function returns the total number of rows?,SUM(),TOTAL(),COUNT(),NUMBER(),COUNT(),easy,technical
+Which join returns matching rows from both tables only?,LEFT JOIN,RIGHT JOIN,FULL JOIN,INNER JOIN,INNER JOIN,easy,technical
+Which keyword removes duplicate rows from a SQL result?,UNIQUE,DISTINCT,DIFFERENT,SEPARATE,DISTINCT,easy,technical
+Which SQL clause filters groups after aggregation?,WHERE,ORDER BY,HAVING,LIMIT,HAVING,medium,technical
+Which window function assigns consecutive row numbers within an ordered partition?,RANK(),ROW_NUMBER(),DENSE_RANK(),COUNT(),ROW_NUMBER(),medium,technical
+Which window function gives the same rank to ties and skips the next rank values?,ROW_NUMBER(),RANK(),DENSE_RANK(),NTILE(),RANK(),medium,technical
+Which window function gives the same rank to ties without skipping rank values?,DENSE_RANK(),RANK(),ROW_NUMBER(),LAG(),DENSE_RANK(),medium,technical
+What does LAG() do in a SQL window function?,Reads the next row value,Reads the previous row value,Counts partitions,Deletes duplicates,Reads the previous row value,medium,technical
+What does LEAD() do in a SQL window function?,Reads the previous row value,Sorts rows descending,Reads the next row value,Finds null values,Reads the next row value,medium,technical
+Which clause inside OVER() is used to divide rows into groups for a window function?,SECTION BY,PARTITION BY,GROUP BY,SPLIT BY,PARTITION BY,medium,technical
+Which clause inside OVER() is used to define the order for a window function?,SORT BY,GROUP BY,ORDER BY,ALIGN BY,ORDER BY,medium,technical
+Which SQL keyword is typically used to limit the number of returned rows?,TOPONLY,LIMIT,RESTRICT,ROWCOUNT,LIMIT,easy,technical
+What is the purpose of a Common Table Expression in SQL?,Compress tables,Create temporary result sets for a query,Backup a database,Delete duplicates permanently,Create temporary result sets for a query,medium,technical
+Which SQL function replaces NULL with a specified value in many databases?,COALESCE(),FILLNULL(),REPLACE_NULL(),IFEMPTY(),COALESCE(),medium,technical
+Which type of neural network is especially effective for image data?,RNN,CNN,Naive Bayes,KNN,CNN,easy,technical
+Which type of neural network is commonly used for sequence data?,CNN,Decision Tree,RNN,K-Means,RNN,easy,technical
+What is the role of an activation function in a neural network?,Store dataset,Introduce non-linearity,Reduce file size,Shuffle rows,Introduce non-linearity,easy,technical
+Which activation function is most commonly used in hidden layers of deep networks?,ReLU,Step,Mean,Argmax,ReLU,medium,technical
+Which activation function is commonly used in the output layer for binary classification?,ReLU,Sigmoid,Softplus,Identity,Sigmoid,medium,technical
+Which activation function is commonly used in the output layer for multi-class classification?,Softmax,Tanh,ReLU,ELU,Softmax,medium,technical
+What is backpropagation used for?,To split the dataset,To update weights using gradients,To generate labels,To visualize data,To update weights using gradients,medium,technical
+What is an epoch in deep learning?,One neuron,One full pass through the training data,One hidden layer,One test prediction,One full pass through the training data,easy,technical
+What does batch size refer to in training?,Number of model layers,Number of samples processed before updating weights,Total number of features,Validation split percentage,Number of samples processed before updating weights,medium,technical
+Which optimizer adapts the learning rate for each parameter and is very commonly used?,BFS,Adam,KNN,Apriori,Adam,medium,technical
+What problem does dropout mainly help reduce?,Underflow,Overfitting,Tokenization,Sorting,Overfitting,medium,technical
+What is overfitting in a model?,Model performs well on training data but poorly on new data,Model has too little data,Model uses too few columns,Model always predicts the mean,Model performs well on training data but poorly on new data,easy,technical
+What is underfitting in a model?,Model memorizes noise,Model fails to learn important patterns,Model uses GPU,Model has too many layers only,Model fails to learn important patterns,easy,technical
+Which layer type is usually used to reduce spatial dimensions in CNNs?,Pooling layer,Embedding layer,Dropout layer,Normalization layer,Pooling layer,medium,technical
+Which recurrent unit was designed to better handle long-term dependencies than vanilla RNNs?,LSTM,PCA,SVM,DBSCAN,LSTM,medium,technical
+What is the vanishing gradient problem?,"Gradients become too small in deep networks, slowing learning",All weights become zero instantly,The dataset loses labels,GPU memory becomes full,"Gradients become too small in deep networks, slowing learning",hard,technical
+What is batch normalization mainly used for?,Encrypt data,Normalize activations to stabilize training,Generate labels,Join tables,Normalize activations to stabilize training,hard,technical
+What does a convolutional filter learn in a CNN?,SQL joins,Local patterns such as edges or textures,Only output labels,Sorting rules,Local patterns such as edges or textures,medium,technical
+Which loss function is commonly used for binary classification in deep learning?,Mean Absolute Error,Binary Cross-Entropy,Huber Loss,Cosine Similarity,Binary Cross-Entropy,medium,technical
+Which loss function is commonly used for regression tasks in neural networks?,Categorical Cross-Entropy,Mean Squared Error,Binary Cross-Entropy,Hinge Loss,Mean Squared Error,medium,technical
+Which hardware is most commonly used to accelerate deep learning training?,GPU,Printer,Router,Keyboard,GPU,easy,technical
+Which pandas function is commonly used to read a CSV file?,pd.open_csv(),pd.read_csv(),pd.load_csv(),pd.csv_read(),pd.read_csv(),easy,technical
+Which pandas method shows the first 5 rows by default?,start(),top(),head(),front(),head(),easy,technical
+Which pandas method shows summary info about columns and dtypes?,describe(),info(),shape(),summary(),info(),easy,technical
+Which pandas method is commonly used to fill missing values?,replace_null(),fillna(),dropempty(),setna(),fillna(),easy,technical
+Which pandas method removes rows with missing values?,remove_na(),fillna(),dropna(),delna(),dropna(),easy,technical
+Which NumPy object is the core n-dimensional array structure?,DataFrame,Series,ndarray,MatrixList,ndarray,easy,technical
+Which library is mainly used for numerical computing in Python?,NumPy,Flask,BeautifulSoup,Tkinter,NumPy,easy,technical
+What is the purpose of train_test_split in scikit-learn?,To visualize data,To split data into training and testing sets,To normalize strings,To deploy models,To split data into training and testing sets,easy,technical
+Why is feature scaling often applied before distance-based algorithms like KNN?,To add new features,To make features contribute on similar scales,To remove labels,To convert classification into regression,To make features contribute on similar scales,medium,technical
+Which metric is especially useful when classes are imbalanced?,Accuracy alone,Precision and recall,Dataset size,Row number,Precision and recall,medium,technical
+What does a confusion matrix summarize?,Training time only,Correct and incorrect predictions by class,Feature scaling values,Database schema,Correct and incorrect predictions by class,medium,technical
+Which Git command downloads commits from a remote repository without merging them automatically?,git pull,git fetch,git merge,git push,git fetch,medium,technical
+Which Git command creates a new local branch and switches to it in one step?,git branch -d new_branch,git checkout -b new_branch,git merge new_branch,git init new_branch,git checkout -b new_branch,medium,technical
+Which command uploads local commits to a remote repository?,git push,git add,git fetch,git clone,git push,easy,technical
+What is the purpose of a virtual environment in Python?,To overclock the CPU,To isolate project dependencies,To compile C code,To create database tables,To isolate project dependencies,medium,technical
+Which command installs packages from a requirements file?,pip install requirements.txt,pip install -r requirements.txt,python requirements.txt,pip add requirements.txt,pip install -r requirements.txt,easy,technical
+Which HTTP method is commonly used to retrieve data from an API?,GET,POST,DELETE,PATCH,GET,easy,technical
+Which HTTP method is commonly used to create a new resource in an API?,GET,POST,TRACE,HEAD,POST,easy,technical
+What does JSON stand for?,Java Source Object Notation,JavaScript Object Notation,Joined Standard Output Network,Java Syntax Open Network,JavaScript Object Notation,easy,technical
+Which operating system concept allows multiple programs to appear to run at the same time?,Fragmentation,Multitasking,Defragmentation,Formatting,Multitasking,easy,technical
+Which scheduling algorithm gives CPU time in fixed time slices?,FCFS,Round Robin,Priority only,Greedy Search,Round Robin,medium,technical
+What is a process in an operating system?,A program in execution,A hardware cable,A database key,A type of compiler only,A program in execution,easy,technical
+What is a thread in an operating system?,A lightweight unit of execution within a process,A full operating system,A hardware disk,A type of network cable,A lightweight unit of execution within a process,medium,technical
+What does RAM primarily provide to a running program?,Permanent storage,Temporary working memory,Internet access,GPU rendering only,Temporary working memory,easy,technical
+Which data structure follows First In First Out order?,Stack,Queue,Tree,Graph,Queue,easy,technical
+Which data structure follows Last In First Out order?,Queue,Heap,Stack,Hash map,Stack,easy,technical
+Which technique reuses knowledge from a source task to improve learning on a related target task?,Bagging,Transfer learning,One-hot encoding,Bootstrapping,Transfer learning,medium,technical
+Which pandas attribute gives the number of rows and columns in a DataFrame?,size,shape,count,columns,shape,easy,technical
